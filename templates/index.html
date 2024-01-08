@@ -1,0 +1,48 @@
+{%extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %} 
+    <div class="container-fluid bg-light">
+        {% if msg|length %}
+            <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <p class="text-center">{{msg}}</p>
+            </div>
+        {% endif %}
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/images/img1.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/images/img2.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/images/img3.jpg" class="d-block w-100" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="h4 mb-3">Plants</h2>
+                    <p>Plants are multicellular organisms that belong to the kingdom Plantae. They are capable of producing their own food through the process of photosynthesis, which involves converting light energy into chemical energy. Plants play a vital role in the ecosystem by providing oxygen, food, and shelter for other living organisms. There are a wide variety of plants, ranging from small herbs to towering trees. Plants are incredibly diverse in terms of their physical characteristics, ranging from the delicate, wispy fronds of ferns to the thick, woody trunks of mature trees. They can be found in nearly every environment on Earth, from the frozen tundras of the polar regions to the scorching deserts of the equator. One of the defining characteristics of plants is their ability to carry out photosynthesis, which involves using chlorophyll to absorb sunlight and convert it into energy. This energy is used to create glucose, which is then used by the plant for growth and maintenance. In addition to producing food and oxygen through photosynthesis, plants also provide numerous benefits to the environment. They help to stabilize soil, prevent erosion, and absorb carbon dioxide from the atmosphere. Many plants also provide habitat and food for a wide variety of animals, from insects to mammals. Humans have been using plants for thousands of years for a variety of purposes, from food and medicine to building materials and clothing. Even today, plants remain an important part of our lives and our economy.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/images/image-right.jpg" alt="Image of a plant">
+                </div>
+            </div>
+        </div>  
+{% endblock %}

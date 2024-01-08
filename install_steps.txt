@@ -1,0 +1,53 @@
+1. Install python 3.10.8
+
+Download Python
+https://www.python.org/ftp/python/3.10.8/python-3.10.8-amd64.exe
+
+Download XAMP
+https://excellmedia.dl.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.28/xampp-windows-x64-8.0.28-0-VS16-installer.exe
+
+
+2. navigate to project folder in cmd and type the following commands
+	
+	pip install virtualenv
+
+3. Now type the following commands:
+	
+	python -m venv venv	
+	
+	pip install -r requirements.txt
+	
+	venv\Scripts\Activate
+	
+	pip install flask
+
+	set FLASK_APP=app.py
+
+	flask run
+
+NOTE: to run again the project only run two commands after navigating to the project folder in cmd:
+
+	set FLASK_APP=app.py
+
+	flask run
+
+
+Errors & Solutions
+-----------------------------
+
+1. Module not found - googleapiclient
+
+pip install google-api-python-client
+
+
+2. No Module found - numpy
+
+pip install numpy
+
+
+
+
+
+Please note total top 100 comments were selected here. And after that some are removed either they are not in english or they have certain emojis or links. So the analysis has been done either on 100 if they are in purely in english or less than 100 as due to removal.
+
+

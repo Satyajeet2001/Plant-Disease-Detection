@@ -1,0 +1,67 @@
+.dash-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.dash-logo-span{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+body {
+    background: linear-gradient(45deg, #537c3b, #6da74c, #88d261, #a6f977);
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  a {
+    color: #4b724c; /* dark green */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #6ea37e; /* light green */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col-md-6 {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  
+  .col-md-6 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4b724c; /* dark green */
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #6ea37e; /* light green */
+  }
+  
